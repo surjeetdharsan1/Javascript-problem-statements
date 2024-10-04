@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:white;
+    }
+    #green{
+        background-color:green;
+    }
+    #red{
+        background-color: red;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #reset{
+        background-color: white;
+    }
+    #heading{
+        color: black;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <h1 id="heading">Button Problem</h1>
+    <button id="green" onclick="changecolour('green')">Green</button>
+    <button id="red" onclick="changecolour('red')">Red</button>
+    <button id="blue" onclick="changecolour('blue')">Blue</button>
+    <button id="reset" onclick="changecolour('white')">Reset</button>
+    <script>
+        function changecolour(color){
+            document.body.style.backgroundColor=color;
+        }
+    </script>
+    
+    
+</body>
+</html>
